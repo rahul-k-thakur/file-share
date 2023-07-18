@@ -1,0 +1,60 @@
+.Card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    > div {
+        padding: 0.5rem;
+        border-bottom: 1px solid #aaa;
+    }
+
+    > div:last-child {
+        border-bottom: 0;
+    }
+
+    .Action {
+        text-align: right;
+    }
+
+    .Details {
+        color: #888;
+        display: flex;
+        flex-direction: row;
+        font-style: italic;
+        justify-content: space-between;
+        padding: 0;
+
+        > div {
+            margin: 0 10px 0 0;
+            padding: 0.5rem;
+        }
+
+        :last-child {
+            margin-right: 0;
+        }
+    }
+    
+    .Title {
+        flex-grow: 1;
+    }
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+
+        > div {
+            border-left: 1px solid #aaa;
+            border-bottom: 0;
+        }
+        
+        > div:last-child {
+            border-right: 1px solid #aaa;
+        }
+
+    }
+
+}
