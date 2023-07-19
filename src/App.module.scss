@@ -1,0 +1,22 @@
+.App {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    min-width: 100%;    
+
+    // .Files {
+    // }
+
+    .DropJone {
+        flex-grow: 1;
+        background-color: red;  
+    }
+
+    @media (min-width: 600px) {
+        border: 1px solid #ccc;
+        margin: auto;
+        min-width: 600px;
+        min-height: 400px;
+    }
+}
